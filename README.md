@@ -4,10 +4,10 @@ Try to implement transformers learning LSTM on real world project Hindi_English 
 A deep learning based Hindi--> English translation system using a Transformer model build from scratch
 
 THis Project implements full pipeline implementation
-  . Data loading from parallel corpus
-  . Subword tokenization using SentencePiece
-  . Transformer encoder-decoder architecture
-  . Training loop with masking and padding
+  1. Data loading from parallel corpus
+  2. Subword tokenization using SentencePiece
+  3. Transformer encoder-decoder architecture
+  4. Training loop with masking and padding
 
 ---
 # Features:
@@ -20,37 +20,37 @@ THis Project implements full pipeline implementation
 # Project WorkFLow
 
 1. Data Loading:
-   . read data directly from .zip file
-   . clean and filter the data and use sentencepiece
+   1. read data directly from .zip file
+   2. clean and filter the data and use sentencepiece
 2. Tokenization:
-   . Train a BPE tokenizer on the data
-   . Restrict vocublary size to 32000, (as per my machine constraint)
+   1. Train a BPE tokenizer on the data
+   1. Restrict vocublary size to 32000, (as per my machine constraint)
 3.Encoding:
-  . <PAD>
-  . <BOS>
-  .<EOS>
+  1. <PAD>
+  2. <BOS>
+  3.<EOS>
 
-  . Fixed length of embedding vector to 128
+  4. Fixed length of embedding vector to 128
 
 4. Transformer Model Architecture:
 Implement like we implement a normal transformer
-  . Embedding Layer
-  . Positional Encoding
-  . Transformer
-    . Encoded Layers: 4
-    . Decoded Layers: 4
-    . Heads: 4
-  . Fully connected Layer
+  1. Embedding Layer
+  2. Positional Encoding
+  3. Transformer
+    i. Encoded Layers: 4
+    ii. Decoded Layers: 4
+    iii. Heads: 4
+  4. Fully connected Layer
 
 5. Training:
-   .Optimizer AdamW
-   . Loss : CrossEntropyLoss
-   . Batch size: 64
+   i.Optimizer AdamW
+   ii. Loss : CrossEntropyLoss
+   ii. Batch size: 64
 
 6. Other Details:
-   . MAX_LEN: 128
-   . VOCAB_SIZE: 32000
-   . EPOCHS : 3
+   i. MAX_LEN: 128
+   ii. VOCAB_SIZE: 32000
+   iii. EPOCHS : 3
 
 ---
 # STEPS TO RUN
@@ -67,16 +67,16 @@ Implement like we implement a normal transformer
 
 ---
 # KEY LEARNINGS:
-  . Implement transformer from scratch
-  . Implement masking
-  . Handle Padding efficiently in 
-  . Understand NLP Pipeline effectively and completely
+  i. Implement transformer from scratch
+  ii. Implement masking
+  iii. Handle Padding efficiently in 
+  iv. Understand NLP Pipeline effectively and completely
 
 ---
 
 # Limitations:
-  . No inference implemented yet
-  . No Beam Search 
-  . Not implement proper UI for it
+  i. No inference implemented yet
+  ii. No Beam Search 
+  iii. Not implement proper UI for it
   
   
