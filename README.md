@@ -24,13 +24,13 @@ THis Project implements full pipeline implementation
    2. clean and filter the data and use sentencepiece
 2. Tokenization:
    1. Train a BPE tokenizer on the data
-   1. Restrict vocublary size to 32000, (as per my machine constraint)
+   2. Restrict vocublary size to 32000, (as per my machine constraint)
 3.Encoding:
   1. <PAD>
   2. <BOS>
   3.<EOS>
 
-  4. Fixed length of embedding vector to 128
+4. Fixed length of embedding vector to 128
 
 4. Transformer Model Architecture:
 Implement like we implement a normal transformer
